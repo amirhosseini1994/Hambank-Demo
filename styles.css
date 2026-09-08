@@ -15,3 +15,13 @@
 .recommend-actions .profile-entry{background:#fff;color:var(--blue);border:1px solid #bdd9ec}
 .recommend-actions .profile-entry:before{content:'⌂';display:inline-block;margin-left:7px;font-size:17px}
 @media(max-width:520px){.onboarding-stage{min-height:100vh}.onboarding-frame img{width:100%;height:auto}}
+
+/* v5 modular pages */
+.menu-card{display:flex;align-items:center;justify-content:space-between;gap:12px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:17px;box-shadow:0 8px 22px rgba(34,77,112,.04);cursor:pointer}
+.menu-card>b,.menu-card b{font-size:15px}.menu-card>span{font-size:22px;color:var(--blue)}
+.asset-line{padding:10px 0;border-bottom:1px solid var(--line)}.asset-line:last-child{border-bottom:0}
+.accordion-switch{display:grid;gap:10px}.accordion-switch>button{border:1px solid var(--line);background:#fff;border-radius:16px;padding:16px;text-align:right;font-weight:900;color:var(--ink);cursor:pointer;position:relative}.accordion-switch>button:after{content:'⌄';position:absolute;left:16px;color:var(--blue)}
+.slide-panel{max-height:0;opacity:0;overflow:hidden;transform:translateY(-8px);transition:max-height .35s ease,opacity .25s ease,transform .25s ease}.slide-panel.open{max-height:1200px;opacity:1;transform:translateY(0)}.panel-inner{background:#f8fbfd;border:1px solid var(--line);border-radius:16px;padding:14px;margin-top:-4px}.mini-list{margin-top:12px;padding-top:10px;border-top:1px solid var(--line)}
+.advisor-card{display:grid;grid-template-columns:52px 1fr;gap:12px;align-items:start;margin-bottom:10px}.advisor-card .avatar{width:52px;height:52px}
+.reason-option{background:#f8fbfd;border:1px solid var(--line);padding:11px;border-radius:14px;margin:8px 0}
+html[data-font='large'] body{font-size:18px}html[data-font='large'] .muted{font-size:14px}html[data-theme='dark'] body{background:#0c1622;color:#e8f0f7}html[data-theme='dark'] .phone,html[data-theme='dark'] .topbar,html[data-theme='dark'] .tabs,html[data-theme='dark'] .card,html[data-theme='dark'] .menu-card,html[data-theme='dark'] .accordion-switch>button,html[data-theme='dark'] .panel-inner{background:#111f2d;color:#e8f0f7;border-color:#26394a}html[data-theme='dark'] .hero{background:linear-gradient(135deg,#14283a,#17332e);border-color:#274254}html[data-theme='dark'] .muted{color:#9db0c1}html[data-theme='dark'] .metric,html[data-theme='dark'] .goal{background:#172737;border-color:#26394a}
